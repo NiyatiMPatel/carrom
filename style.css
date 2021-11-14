@@ -12,10 +12,11 @@ body {
 }
 
 .carrom-frame {
-  border: 10px solid black;
+  border: 36px solid black;
   height: 500px;
   width: 500px;
   position: relative;
+  background-color: #d88449de;
 }
 
 .corner-top-left,
@@ -31,20 +32,26 @@ body {
 .center {
   height: 200px;
   width: 200px;
-  border: 2px solid #f00;
+  border: 10px solid;
   border-radius: 50%;
   position: absolute;
 }
 
+.corner-top-left {
+  border-bottom-right-radius: 100%;
+}
 .corner-top-right {
   right: 0;
+  border-bottom-left-radius: 100%;
 }
 .corner-bottom-left {
   bottom: 0;
+  border-top-right-radius: 100%;
 }
 .corner-bottom-right {
   bottom: 0;
   right: 0;
+  border-top-left-radius: 100%;
 }
 .center {
   top: 50%;
